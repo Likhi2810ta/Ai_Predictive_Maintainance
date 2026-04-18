@@ -17,7 +17,7 @@ from datetime import datetime, timezone
 
 import sseclient
 
-BASE_URL = "http://localhost:3000"
+BASE_URL = "https://hack-malenadu.onrender.com"
 MACHINE_IDS = ["CNC_01", "CNC_02", "PUMP_03", "CONVEYOR_04"]
 SENSORS = ["temperature_C", "vibration_mm_s", "rpm", "current_A"]
 BUFFER_SIZE = 120
