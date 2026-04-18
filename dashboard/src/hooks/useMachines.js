@@ -12,7 +12,7 @@ export function useMachines() {
 
   useEffect(() => {
     function connect() {
-      const es = new EventSource(`${API}/api/stream`)
+      const es = new EventSource(`${API_BASE}/api/stream`)
       esRef.current = es
 
       es.onopen = () => setConnected(true)
@@ -48,7 +48,7 @@ export async function fetchHistory(machineId) {
 }
 
 export async function confirmMaintenance(machineId) {
-  await fetch(`$API_BASE}/api/machines/${machineId}/confirm`, { method: 'POST' })
+  await fetch(`${API_BASE}/api/machines/${machineId}/confirm`, { method: 'POST' })
 }
 
 export async function dismissAlarm(machineId) {
