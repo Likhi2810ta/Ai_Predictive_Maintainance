@@ -2,6 +2,14 @@
 
 Real-time anomaly detection for industrial machines using Z-score analysis, Isolation Forest, and polyfit trend scoring. Includes a Streamlit monitoring agent, FastAPI backend, React dashboard, and an Express.js SSE simulation server.
 
+## Live Deployments
+
+| Service | URL |
+|---|---|
+| Frontend (Vercel) | https://ai-predictive-maintainance.vercel.app |
+| Backend API (Render) | https://ai-predictive-maintainance.onrender.com |
+| Live Server (Railway) | https://aipredictivemaintainance-production.up.railway.app |
+
 ---
 
 ## Architecture
