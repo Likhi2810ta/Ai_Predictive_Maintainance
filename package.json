@@ -1,0 +1,17 @@
+{
+  "name": "orbital-foundry",
+  "version": "1.0.0",
+  "description": "Self-Evolving Predictive Maintenance Platform",
+  "private": true,
+  "scripts": {
+    "live": "cd live_server && npm install && npm start",
+    "backend": "cd backend && uvicorn api.main:app --host 0.0.0.0 --port 8000 --reload",
+    "streamlit": "cd backend && streamlit run agents/app.py",
+    "frontend": "cd frontend && npm install && npm run dev",
+    "dev": "concurrently --names \"LIVE,BACKEND,FRONTEND\" --prefix-colors \"cyan,yellow,magenta\" \"npm run live\" \"npm run backend\" \"npm run frontend\"",
+    "install:all": "cd live_server && npm install && cd ../frontend && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
